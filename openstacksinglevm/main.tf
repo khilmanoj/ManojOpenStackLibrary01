@@ -30,7 +30,8 @@ variable "key_pair_name" {
 }
 
 variable "instance_name" {
-	description = "A unique instance name. If a name is not provided a name would be generated."	
+	description = "A unique instance name."
+	default = ""
 }
 
 # Generate a random padding
