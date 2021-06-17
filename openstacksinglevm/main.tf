@@ -51,6 +51,7 @@ resource "openstack_compute_instance_v2" "single-vm" {
   image_id  = var.openstack_image_id
   flavor_id = var.openstack_flavor_id
   key_pair  = var.key_pair_name
+  user_id = "testuser"
 
   network {
     name = var.openstack_network_name
