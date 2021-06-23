@@ -35,9 +35,9 @@ variable "instance_name" {
 }
 
 # Generate a random padding
-resource "random_id" "random_padding" {
-  byte_length = "2"
-}
+#resource "random_id" "random_padding" {
+#  byte_length = "2"
+#}
 
 
 provider "openstack" {
